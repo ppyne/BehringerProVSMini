@@ -4,7 +4,7 @@
 
 Cette documentation se focalise uniquement sur les aspects du paramétrage d'un PRESET, et rien d'autre.
 
-Cette documentation n'explique pas les concepts habituels qu'on retrouve sur tout synthétiseur. Par exemple, elle n'explique pas comment fonctionne un filtre passe bas, ce qu'est une enveloppe, un VCA ou un VCF, comment fonctionne un LFO ni comment il se paramètre, encore moins comment fonctionne le séquence ou l'arpégiateur.
+Cette documentation n'explique pas les concepts habituels qu'on retrouve sur tout synthétiseur. Par exemple, elle n'explique pas comment fonctionne un filtre passe bas, ce qu'est une enveloppe, un VCA ou un VCF, comment fonctionne un LFO ni comment il se paramètre, encore moins comment fonctionne le séquenceur ou l'arpégiateur.
 
 ## A. Fonctionnement de la synthèse vectorielle
 
