@@ -4,6 +4,19 @@ Clone miniature du synthétiseur emblématique de chez Sequential : le Prophet 
 
 ![](illustrations/Behringer-Pro-VS-Mini-ill-0.png)
 
+# Table des matières
+
+- [Repérage des réglages](#repérage-des-réglages)
+- [Comment mettre au point un preset](#comment-mettre-au-point-un-preset)
+  - [A. Fonctionnement de la synthèse vectorielle](#a-fonctionnement-de-la-synthèse-vectorielle)
+  - [B. La touche MIX donne accès aux paramètres](#b-la-touche-mix-donne-accès-aux-paramètres)
+    - [1. Le menu MIX ENV LOOL définit les points de la boucle](#1-le-menu-mix-env-lool-définit-les-points-de-la-boucle)
+    - [2. Le menu MIX ENV REPEAT définit le nombre de répétitions](#2-le-menu-mix-env-repeat-définit-le-nombre-de-répétitions)
+    - [3. Les menus MIX ENV POINT: 0 à 4 définissent les positions vectorielles dans le temps](#3-les-menus-mix-env-point-0-à-4-définissent-les-positions-vectorielles-dans-le-temps)
+  - [C. Comprendre la troisième enveloppe : MIX](#c-comprendre-la-troisième-enveloppe--mix)
+  - [D. Les formes d'onde](#d-les-formes-donde)
+  - [E. Finaliser le PRESET](#e-finaliser-le-preset)
+
 # Repérage des réglages
 
 ![](illustrations/Behringer-Pro-VS-Mini-ill-3.png)
@@ -24,9 +37,9 @@ Lorsque le joystick [8] est en position centrale, les oscillateurs ont tous le m
 
 Vous obtenez ainsi un son qui se transforme sur un plan en 2 dimensions avec le mouvement du joystick, à quoi s’ajoute l’automation de l’enveloppe de mixage véctoriel.
 
-## B. La touche `Mix` donne accès aux paramètres
+## B. La touche `MIX` donne accès aux paramètres
 
-Un appui sur la touche `Func` [28], puis sur la touche du clavier `Mix` [43], donne accès au paramétrage de l’enveloppe de mixage vectoriel. Naviguez à travers les menus  en appuyant  sur la touche du clavier `Mix` [43] : chaque appui permet de passer au menu suivant.
+Un appui sur la touche `FUNC` [28], puis sur la touche du clavier `MIX` [43], donne accès au paramétrage de l’enveloppe de mixage vectoriel. Naviguez à travers les menus  en appuyant  sur la touche du clavier `MIX` [43] : chaque appui permet de passer au menu suivant.
 
 ### 1. Le menu `MIX ENV LOOL` définit les points de la boucle
 
