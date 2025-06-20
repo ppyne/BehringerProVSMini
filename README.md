@@ -248,7 +248,7 @@ Voici la liste exhaustive des formes d'onde disponibles sur le Behringer Pro VS 
 | 126    | Silence              | ![](ondes/Behringer-Pro-VS-Mini-onde-126.png) |
 | 127    | White Noise          | ![](ondes/Behringer-Pro-VS-Mini-onde-127.png) |
 
-D. Finaliser le PRESET
+## E. Finaliser le PRESET
 
 Les fonctions `PROGRAM` sur le clavier, disponibles par la pression de la touche `FUNC` [28] permettent de finaliser votre œuvre : c'est à dire de lui donner un nom (de l'éditer) avec la touche `NAME` [44] (chaque touche du clavier porte une lettre alphabétique de A à Z avec un espace sur la dernière) et de la stocker en mémoire grâce à la touche `STORE` [46].
 
