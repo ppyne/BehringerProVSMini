@@ -191,4 +191,4 @@
 | 126 | Silence<br>(Silence)         | Aucune onde — utile pour muting ou slot vide | ![](ondes/Behringer-Pro-VS-Mini-onde-126.png) |
 | 127 | White Noise<br>(Bruit blanc) | Onde bruitée, utile pour percussions ou FX   | ![](ondes/Behringer-Pro-VS-Mini-onde-127.png) |
 
-[Retour à la page principale](README.md)
+[Retour à la page principale](https://github.com/ppyne/BehringerProVSMini)
