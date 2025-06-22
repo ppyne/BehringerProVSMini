@@ -35,7 +35,7 @@ Lorsque le joystick [8] est en position centrale, les oscillateurs ont tous le m
 
 ![](illustrations/Behringer-Pro-VS-Mini-ill-1.png)
 
-Vous obtenez ainsi un son qui se transforme sur un plan en 2 dimensions avec le mouvement du joystick, à quoi s’ajoute l’automation de l’enveloppe de mixage véctoriel.
+Vous obtenez ainsi un son qui se transforme sur un plan en 2 dimensions avec le mouvement du joystick, à quoi s’ajoute l’automation de l’enveloppe de mixage vectoriel.
 
 ## B. La touche `MIX` donne accès aux paramètres
 
