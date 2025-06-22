@@ -2,6 +2,8 @@
 
 ## Formes d’ondes classées par catégorie
 
+Voici la liste des formes d'onde disponibles sur le Behringer Pro VS Mini organisée par catégorie.
+
 **Table des matières :**
 
 - [Formes classiques](#formes-classiques)

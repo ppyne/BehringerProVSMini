@@ -2,6 +2,8 @@
 
 ## Formes d’ondes
 
+Voici la liste exhaustive des formes d'onde disponibles sur le Behringer Pro VS Mini
+
 | ID  | Nom                                                  | Description                                                       | Forme                                         |
 | --- | ---------------------------------------------------- | ----------------------------------------------------------------- | --------------------------------------------- |
 | 000 | Twang<br>(Twang)                                     | Claquant, style guitare — lead punchy, percussions synth          | ![](ondes/Behringer-Pro-VS-Mini-onde-000.png) |

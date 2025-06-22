@@ -105,7 +105,7 @@ Sur le Pro VS Mini, vous avez **trois enveloppes indépendantes**, accessibles v
 
 ### À quoi correspondent les valeurs `R1` à `R4` quand la LED `MIX` est allumée ?
 
-Ce sont les **4 segments de temps** qui déterminent **combien de temps le son met à passer** d’un point à l’autre :
+Ce sont les **4 segments de temps** qui déterminent **combien de temps le son met à passer** d’un point (`MIX ENV POINT` ou étape) à l’autre :
 
 | Potentiomètre | Transition concernée                   |
 | ------------- | -------------------------------------- |
@@ -114,9 +114,11 @@ Ce sont les **4 segments de temps** qui déterminent **combien de temps le son m
 | **R3**        | Durée de **Point 2 → 3**               |
 | **R4**        | Durée de **Point 3 → 4**               |
 
-Ces durées sont exprimées en valeurs de 0 à 99. Plus la valeur est élevée, plus la transition entre les deux points est lente (la progression dure plus longtemps).
+Ces durées sont exprimées en valeurs de 0 à 99. Plus la valeur est élevée, plus la transition entre les deux points (étapes) est lente (la progression dure plus longtemps).
 
-Notons que le passage d'un état à un autre est progressif ; un effet de morphing s'opère pour parvenir à l'état suivant.
+Notons que le passage d'un point à un autre est progressif ; un effet de morphing s'opère pour parvenir au point suivant.
+
+Notons aussi que si les valeurs de R1 à R4 sont réglées à 0 et que `MIX ENV LOOP` est paramétré à `OFF`, alors aucun point, autre que 0, n’est joué.
 
 ## D. Les formes d'onde
 
@@ -128,138 +130,10 @@ Le potentiomètre `WAVE` [22] permettent de changer la forme d'onde ; son numé
 
 Notons qu'il est possible rendre un oscillateur **silencieux** à l'aide du numéro 126, qu'il est permis d'exploiter un **bruit blanc** à l'aide du numéro 127 et que les numéros pour les formes de base sont 32 ou  96 pour une **onde sinusoïdale**, 33 pour une **onde en dents de scie** et 34, ou 50 pour un **signal carré**.
 
-Voici la liste exhaustive des formes d'onde disponibles sur le Behringer Pro VS Mini :
+**Listes des formes d'onde disponibles sur le Behringer Pro VS Mini :**
 
-| Numéro | Nom                  | Forme                                         |
-| ------ | -------------------- | --------------------------------------------- |
-| 0      | Twang                | ![](ondes/Behringer-Pro-VS-Mini-onde-000.png) |
-| 1      | Clav                 | ![](ondes/Behringer-Pro-VS-Mini-onde-001.png) |
-| 2      | Xylophone            | ![](ondes/Behringer-Pro-VS-Mini-onde-002.png) |
-| 3      | Slippery Slope       | ![](ondes/Behringer-Pro-VS-Mini-onde-003.png) |
-| 4      | Enharmonic Square    | ![](ondes/Behringer-Pro-VS-Mini-onde-004.png) |
-| 5      | Xylophone 2          | ![](ondes/Behringer-Pro-VS-Mini-onde-005.png) |
-| 6      | Mellow Square        | ![](ondes/Behringer-Pro-VS-Mini-onde-006.png) |
-| 7      | Chaos 1              | ![](ondes/Behringer-Pro-VS-Mini-onde-007.png) |
-| 8      | Chaos 2              | ![](ondes/Behringer-Pro-VS-Mini-onde-008.png) |
-| 9      | Chaos 3              | ![](ondes/Behringer-Pro-VS-Mini-onde-009.png) |
-| 10     | Chaos 4              | ![](ondes/Behringer-Pro-VS-Mini-onde-010.png) |
-| 11     | Bright Square        | ![](ondes/Behringer-Pro-VS-Mini-onde-011.png) |
-| 12     | Hollow               | ![](ondes/Behringer-Pro-VS-Mini-onde-012.png) |
-| 13     | BP Square            | ![](ondes/Behringer-Pro-VS-Mini-onde-013.png) |
-| 14     | Ski Slope 1          | ![](ondes/Behringer-Pro-VS-Mini-onde-014.png) |
-| 15     | Rasp                 | ![](ondes/Behringer-Pro-VS-Mini-onde-015.png) |
-| 16     | Peal                 | ![](ondes/Behringer-Pro-VS-Mini-onde-016.png) |
-| 17     | Fuzz                 | ![](ondes/Behringer-Pro-VS-Mini-onde-017.png) |
-| 18     | Floss                | ![](ondes/Behringer-Pro-VS-Mini-onde-018.png) |
-| 19     | Excite               | ![](ondes/Behringer-Pro-VS-Mini-onde-019.png) |
-| 20     | Awaken               | ![](ondes/Behringer-Pro-VS-Mini-onde-020.png) |
-| 21     | Energize             | ![](ondes/Behringer-Pro-VS-Mini-onde-021.png) |
-| 22     | BP Twang             | ![](ondes/Behringer-Pro-VS-Mini-onde-022.png) |
-| 23     | Complex Pulse        | ![](ondes/Behringer-Pro-VS-Mini-onde-023.png) |
-| 24     | Mellow Square 2      | ![](ondes/Behringer-Pro-VS-Mini-onde-024.png) |
-| 25     | Harmonic Square      | ![](ondes/Behringer-Pro-VS-Mini-onde-025.png) |
-| 26     | Thin Ramp            | ![](ondes/Behringer-Pro-VS-Mini-onde-026.png) |
-| 27     | Xylophone 3          | ![](ondes/Behringer-Pro-VS-Mini-onde-027.png) |
-| 28     | Thin Square          | ![](ondes/Behringer-Pro-VS-Mini-onde-028.png) |
-| 29     | Harmonic Ramp        | ![](ondes/Behringer-Pro-VS-Mini-onde-029.png) |
-| 30     | Rouse                | ![](ondes/Behringer-Pro-VS-Mini-onde-030.png) |
-| 31     | Waken                | ![](ondes/Behringer-Pro-VS-Mini-onde-031.png) |
-| 32     | Sine                 | ![](ondes/Behringer-Pro-VS-Mini-onde-032.png) |
-| 33     | Sawtooth             | ![](ondes/Behringer-Pro-VS-Mini-onde-033.png) |
-| 34     | Square               | ![](ondes/Behringer-Pro-VS-Mini-onde-034.png) |
-| 35     | Dome 1               | ![](ondes/Behringer-Pro-VS-Mini-onde-035.png) |
-| 36     | Dome 2               | ![](ondes/Behringer-Pro-VS-Mini-onde-036.png) |
-| 37     | Mellow Dome          | ![](ondes/Behringer-Pro-VS-Mini-onde-037.png) |
-| 38     | Dome 3               | ![](ondes/Behringer-Pro-VS-Mini-onde-038.png) |
-| 39     | Dome 4               | ![](ondes/Behringer-Pro-VS-Mini-onde-039.png) |
-| 40     | Rasp 1               | ![](ondes/Behringer-Pro-VS-Mini-onde-040.png) |
-| 41     | Rasp 2               | ![](ondes/Behringer-Pro-VS-Mini-onde-041.png) |
-| 42     | Rasp 3               | ![](ondes/Behringer-Pro-VS-Mini-onde-042.png) |
-| 43     | Rasp 4               | ![](ondes/Behringer-Pro-VS-Mini-onde-043.png) |
-| 44     | Dome 5               | ![](ondes/Behringer-Pro-VS-Mini-onde-044.png) |
-| 45     | HP Saw               | ![](ondes/Behringer-Pro-VS-Mini-onde-045.png) |
-| 46     | High BP Saw          | ![](ondes/Behringer-Pro-VS-Mini-onde-046.png) |
-| 47     | High BP Square       | ![](ondes/Behringer-Pro-VS-Mini-onde-047.png) |
-| 48     | Vocal                | ![](ondes/Behringer-Pro-VS-Mini-onde-048.png) |
-| 49     | Squeeze box          | ![](ondes/Behringer-Pro-VS-Mini-onde-049.png) |
-| 50     | Pulse                | ![](ondes/Behringer-Pro-VS-Mini-onde-050.png) |
-| 51     | Limp Saw             | ![](ondes/Behringer-Pro-VS-Mini-onde-051.png) |
-| 52     | Spark Wave 1         | ![](ondes/Behringer-Pro-VS-Mini-onde-052.png) |
-| 53     | Spark Wave 2         | ![](ondes/Behringer-Pro-VS-Mini-onde-053.png) |
-| 54     | Spark Wave 3         | ![](ondes/Behringer-Pro-VS-Mini-onde-054.png) |
-| 55     | Mid Wave 1           | ![](ondes/Behringer-Pro-VS-Mini-onde-055.png) |
-| 56     | Cacophnous Buzz 1    | ![](ondes/Behringer-Pro-VS-Mini-onde-056.png) |
-| 57     | Mid Buzz 1           | ![](ondes/Behringer-Pro-VS-Mini-onde-057.png) |
-| 58     | Dome 6               | ![](ondes/Behringer-Pro-VS-Mini-onde-058.png) |
-| 59     | Soft Dome 3          | ![](ondes/Behringer-Pro-VS-Mini-onde-059.png) |
-| 60     | Dome 7               | ![](ondes/Behringer-Pro-VS-Mini-onde-060.png) |
-| 61     | Spark Wave 4         | ![](ondes/Behringer-Pro-VS-Mini-onde-061.png) |
-| 62     | Spark Wave 5         | ![](ondes/Behringer-Pro-VS-Mini-onde-062.png) |
-| 63     | Soft Dome 4          | ![](ondes/Behringer-Pro-VS-Mini-onde-063.png) |
-| 64     | Dome 8               | ![](ondes/Behringer-Pro-VS-Mini-onde-064.png) |
-| 65     | Organ                | ![](ondes/Behringer-Pro-VS-Mini-onde-065.png) |
-| 66     | Spark Wave 5         | ![](ondes/Behringer-Pro-VS-Mini-onde-066.png) |
-| 67     | Soft Wave 1          | ![](ondes/Behringer-Pro-VS-Mini-onde-067.png) |
-| 68     | Soft Wave 2          | ![](ondes/Behringer-Pro-VS-Mini-onde-068.png) |
-| 69     | Spark Wave 7         | ![](ondes/Behringer-Pro-VS-Mini-onde-069.png) |
-| 70     | Reed                 | ![](ondes/Behringer-Pro-VS-Mini-onde-070.png) |
-| 71     | Soft Wave 3          | ![](ondes/Behringer-Pro-VS-Mini-onde-071.png) |
-| 72     | Soft Wave 4          | ![](ondes/Behringer-Pro-VS-Mini-onde-072.png) |
-| 73     | Saxophone            | ![](ondes/Behringer-Pro-VS-Mini-onde-073.png) |
-| 74     | Soft Wave 5          | ![](ondes/Behringer-Pro-VS-Mini-onde-074.png) |
-| 75     | Trashy Wave 1        | ![](ondes/Behringer-Pro-VS-Mini-onde-075.png) |
-| 76     | Trashy Wave 2        | ![](ondes/Behringer-Pro-VS-Mini-onde-076.png) |
-| 77     | Trashy Wave 3        | ![](ondes/Behringer-Pro-VS-Mini-onde-077.png) |
-| 78     | Trashy Wave 4        | ![](ondes/Behringer-Pro-VS-Mini-onde-078.png) |
-| 79     | Trashy Wave 5        | ![](ondes/Behringer-Pro-VS-Mini-onde-079.png) |
-| 80     | Trashy Wave 6        | ![](ondes/Behringer-Pro-VS-Mini-onde-080.png) |
-| 81     | Jaw Harp 1           | ![](ondes/Behringer-Pro-VS-Mini-onde-081.png) |
-| 82     | Jaw Harp 2           | ![](ondes/Behringer-Pro-VS-Mini-onde-082.png) |
-| 83     | Soft Wave 6          | ![](ondes/Behringer-Pro-VS-Mini-onde-083.png) |
-| 84     | Thin 1               | ![](ondes/Behringer-Pro-VS-Mini-onde-084.png) |
-| 85     | Thin 2               | ![](ondes/Behringer-Pro-VS-Mini-onde-085.png) |
-| 86     | Spark Wave 8         | ![](ondes/Behringer-Pro-VS-Mini-onde-086.png) |
-| 87     | Spark Wave 9         | ![](ondes/Behringer-Pro-VS-Mini-onde-087.png) |
-| 88     | Spark Wave 10        | ![](ondes/Behringer-Pro-VS-Mini-onde-088.png) |
-| 89     | Soft Dome 5          | ![](ondes/Behringer-Pro-VS-Mini-onde-089.png) |
-| 90     | Soft Dome 6          | ![](ondes/Behringer-Pro-VS-Mini-onde-090.png) |
-| 91     | Cacophonous Buzz 2   | ![](ondes/Behringer-Pro-VS-Mini-onde-091.png) |
-| 92     | Thin 3               | ![](ondes/Behringer-Pro-VS-Mini-onde-092.png) |
-| 93     | Spark Wave 11        | ![](ondes/Behringer-Pro-VS-Mini-onde-093.png) |
-| 94     | Soft Dome 7          | ![](ondes/Behringer-Pro-VS-Mini-onde-094.png) |
-| 95     | Soft Wave 7          | ![](ondes/Behringer-Pro-VS-Mini-onde-095.png) |
-| 96     | Sine 2               | ![](ondes/Behringer-Pro-VS-Mini-onde-096.png) |
-| 97     | Sync’d Sine          | ![](ondes/Behringer-Pro-VS-Mini-onde-097.png) |
-| 98     | Trashy Wave 7        | ![](ondes/Behringer-Pro-VS-Mini-onde-098.png) |
-| 99     | Twingle Pad          | ![](ondes/Behringer-Pro-VS-Mini-onde-099.png) |
-| 100    | Dome 9               | ![](ondes/Behringer-Pro-VS-Mini-onde-100.png) |
-| 101    | Thin 4               | ![](ondes/Behringer-Pro-VS-Mini-onde-101.png) |
-| 102    | Thin 5               | ![](ondes/Behringer-Pro-VS-Mini-onde-102.png) |
-| 103    | Trashy Wave 8        | ![](ondes/Behringer-Pro-VS-Mini-onde-103.png) |
-| 104    | Trashy Wave 9        | ![](ondes/Behringer-Pro-VS-Mini-onde-104.png) |
-| 105    | Trashy Wave 10       | ![](ondes/Behringer-Pro-VS-Mini-onde-105.png) |
-| 106    | Trashy Wave 11       | ![](ondes/Behringer-Pro-VS-Mini-onde-106.png) |
-| 107    | Trashy Wave 12       | ![](ondes/Behringer-Pro-VS-Mini-onde-107.png) |
-| 108    | Trashy Wave 13       | ![](ondes/Behringer-Pro-VS-Mini-onde-108.png) |
-| 109    | Spark Wave 12        | ![](ondes/Behringer-Pro-VS-Mini-onde-109.png) |
-| 110    | Spark Wave 13        | ![](ondes/Behringer-Pro-VS-Mini-onde-110.png) |
-| 111    | Trashy Wave 14       | ![](ondes/Behringer-Pro-VS-Mini-onde-111.png) |
-| 112    | Trashy Wave 15       | ![](ondes/Behringer-Pro-VS-Mini-onde-112.png) |
-| 113    | Rainbow              | ![](ondes/Behringer-Pro-VS-Mini-onde-113.png) |
-| 114    | Soft Dome 8          | ![](ondes/Behringer-Pro-VS-Mini-onde-114.png) |
-| 115    | Trashy Wave 15       | ![](ondes/Behringer-Pro-VS-Mini-onde-115.png) |
-| 116    | Soothing 1           | ![](ondes/Behringer-Pro-VS-Mini-onde-116.png) |
-| 117    | Soothing 2           | ![](ondes/Behringer-Pro-VS-Mini-onde-117.png) |
-| 118    | Space Wave           | ![](ondes/Behringer-Pro-VS-Mini-onde-118.png) |
-| 119    | 5th Rasp             | ![](ondes/Behringer-Pro-VS-Mini-onde-119.png) |
-| 120    | Octave Wave          | ![](ondes/Behringer-Pro-VS-Mini-onde-120.png) |
-| 121    | Triangle + Overtones | ![](ondes/Behringer-Pro-VS-Mini-onde-121.png) |
-| 122    | Pulse + Overtones    | ![](ondes/Behringer-Pro-VS-Mini-onde-122.png) |
-| 123    | Rising Square        | ![](ondes/Behringer-Pro-VS-Mini-onde-123.png) |
-| 124    | Soft Wave 8          | ![](ondes/Behringer-Pro-VS-Mini-onde-124.png) |
-| 125    | Cacophonous Buzz 3   | ![](ondes/Behringer-Pro-VS-Mini-onde-125.png) |
-| 126    | Silence              | ![](ondes/Behringer-Pro-VS-Mini-onde-126.png) |
-| 127    | White Noise          | ![](ondes/Behringer-Pro-VS-Mini-onde-127.png) |
+- [Par numéros](https://github.com/ppyne/BehringerProVSMini/blob/main/ondes.md)
+- [Par catégories](https://github.com/ppyne/BehringerProVSMini/blob/main/ondes_par_categories.md)
 
 ## E. Finaliser le PRESET
 
